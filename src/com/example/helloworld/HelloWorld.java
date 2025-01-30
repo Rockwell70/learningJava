@@ -2,6 +2,7 @@ package com.example.helloworld;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Scanner;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -15,6 +16,10 @@ public class HelloWorld {
             System.out.println(car);
         }
 
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Hva heter du?");
+        String name = reader.nextLine();
+        System.out.println("Hei " + name);
 
     }
 }
